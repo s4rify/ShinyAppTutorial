@@ -1,0 +1,47 @@
+---
+title: "ShinyAppTutorial for Foundations of STS Engineering"
+author: "Sarah Blum"
+date: "January 27, 2018"
+output: pdf_document
+---
+
+<!--
+Sources:
+- basic commands for R markdown:
+http://rmarkdown.rstudio.com/authoring_rcodechunks.html,
+- knitR cheat sheet:
+https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+- shiny cheat sheet:
+http://shiny.rstudio.com/images/shiny-cheatsheet.pdf
+- all cheat sheets from R in one place:
+https://www.rstudio.com/resources/cheatsheets/
+
+- examples of shiny Apps including tutorials and showcases
+https://shiny.rstudio.com/gallery/
+http://shiny.rstudio.com/tutorial/written-tutorial/lesson1/
+-->
+
+## Helpful Links for today
+- shiny cheat sheet:
+http://shiny.rstudio.com/images/shiny-cheatsheet.pdf
+
+- all cheat sheets from R in one place:
+https://www.rstudio.com/resources/cheatsheets/
+
+- examples of shiny Apps including tutorials and showcases
+https://shiny.rstudio.com/gallery/
+
+
+
+## If you ever get stuck: Debugging Shiny Apps
+To debug your Shiny App, you have several options available. The simplest is an unconditional breakpoint which interrupts the execution of your script:
+
+```{r, eval=FALSE}
+browser()
+```
+
+If your breakpoint has some conditions tied to it, then use:
+```{r, eval=FALSE}
+# Stop execution when the user selects "am"
+browser(expr = identical(input$variable, "am"))
+```
