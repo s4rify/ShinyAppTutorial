@@ -1,0 +1,98 @@
+---
+title: "ShinyAppTutorial for Foundations of STS Engineering"
+author: "Sarah Blum"
+date: "January 27, 2018"
+widescreen: true
+output:
+  ioslides_presentation:
+    incremental: false
+---
+<!-- Sources
+- basics on markdown slides:
+- http://rmarkdown.rstudio.com/ioslides_presentation_format.html
+- https://www.rdocumentation.org/packages/rmarkdown/versions/1.8/topics/ioslides_presentation
+- https://www.stat.auckland.ac.nz/~stats330/literature/RMarkdownReferenceGuide.pdf
+-->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Agenda
+- Motivation
+- What is Shiny
+- Hello World App
+- Showcase App
+- Task
+- Wrap up 
+
+## Motivation for Shiny Apps 
+- R is awesome
+- number one statistical language 
+- great community
+- Shiny is a way to share & visualize code and results
+- R was very local and static before
+- browser world is exploding: let's take advantage of it
+
+## What is Shiny
+- interactive web application
+- 'wrapper' for HTML and Javascript
+- not general purpose: it's for data analysis 
+- no HTML or Javascript knowledge needed
+- but if you have some: you can use it to adapt your apps
+- share results with community
+
+## Prerequisites
+- R installed
+- RStudio installed
+
+
+## Hello World and Showcase App
+DEMO
+
+## Share your code/app with colleagues
+- downloadHandler()
+- markup knitR
+
+--> https://shiny.rstudio.com/articles/generating-reports.html
+
+
+## Source of Material for today:
+https://github.com/s4rify/ShinyAppTutorial
+
+- here, you will find scripts and these slides with the exercises
+- (I will upload everything there after today, if you ever want to downlad the rest :) 
+
+## Exercises (1)
+- write a Star Wars app which displays text like in the beginning of the movies:
+![Alt text](starWarsTextSmall.png) 
+
+## Exercise (2)
+- download map.R, helpers.R and counties.rds from the github page
+- install missing packages:
+```{r , eval = FALSE, echo = TRUE}
+install.packages(c("maps", "mapproj"))
+```
+- create folder '/data' and put the counties.rds file inside 
+- put helper.R in top-level folder on the same level with map.R
+- run the app 
+ 
+- explore the counties dataset
+```{r , eval = FALSE, echo = TRUE}
+counties <- readRDS("data/counties.rds")
+```
+- add the missing group of the population in a color of your choice to the app 
+
+## Exercise (3)
+- do we need another exercise? 
+- show tutorials
+
+## Wrap up
+- I hope you got a feeling of what shiny apps can be used for 
+- and you know where to find the material if you ever want to make one
+- there are great tutorials out there 
+- and some pretty nice showcases
+- Shiny server
+
+THANK YOU FOR YOUR ATTENTION! ʘ‿ʘ
+
