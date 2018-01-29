@@ -1,4 +1,5 @@
-# let's add tabs so that we don't have to scroll down so far
+# Full Talk: https://www.youtube.com/watch?v=Ido56dwDTg8&t=1s
+#
 library(shiny)
 
 ui <- fluidPage(
